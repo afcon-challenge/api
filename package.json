@@ -2,14 +2,16 @@
   "name": "app",
   "version": "1.0.50",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "predev": "prisma migrate deploy && prisma generate",
     "dev": "bun run --watch src/index.ts"
   },
   "dependencies": {
+    "@prisma/client": "^5.8.1",
     "elysia": "latest"
   },
   "devDependencies": {
-    "bun-types": "latest"
+    "bun-types": "latest",
+    "prisma": "^5.8.1"
   },
   "module": "src/index.js"
 }
