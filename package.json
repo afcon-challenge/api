@@ -3,7 +3,9 @@
   "version": "1.0.50",
   "scripts": {
     "predev": "prisma migrate deploy && prisma generate",
-    "dev": "bun run --watch src/index.ts"
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun run src/index.ts",
+    "prestart": "prisma migrate deploy && prisma generate",
   },
   "dependencies": {
     "@prisma/client": "^5.8.1",
