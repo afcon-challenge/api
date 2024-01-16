@@ -1,9 +1,5 @@
 import { Elysia, t } from "elysia";
-import {
-  CreateSubmission,
-  FindSubmissionById,
-  PostSubmissionCreation,
-} from "./submission.service";
+import { CreateSubmission, FindSubmissionById } from "./submission.service";
 import { GetJudge0Languages } from "./judge0.service";
 
 const app = new Elysia()
