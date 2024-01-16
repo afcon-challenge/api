@@ -2,8 +2,7 @@
 
 ## Getting up and running
 
-
-```bash
+```sh
 cp .env.example .env # To create a .env file
 
 bun i # To install dependencies
