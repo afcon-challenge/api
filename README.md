@@ -1,9 +1,14 @@
 # AFCON Challenge (API)
 
-## Development
+## Getting up and running
 
-To start the development server run:
 
 ```bash
-bun dev
+cp .env.example .env # To create a .env file
+
+bun i # To install dependencies
+
+bun start # To start the server
+
+bun dev # To start the development server
 ```

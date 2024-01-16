@@ -26,7 +26,7 @@ export const JUDGE0_STATUS = {
   14: "Exec Format Error",
 };
 
-const JUDGE0_BASE_URL = "https://judge0.uk.to";
+const JUDGE0_BASE_URL = process.env.JUDGE0_BASE_URL ?? "http://localhost:2358";
 
 export const CreateJudge0Submissions = async (
   args: TCreateJudge0Submission[]
