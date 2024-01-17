@@ -14,10 +14,7 @@ COPY ./package.json ./bun.lockb ./
 COPY ./src ./
 COPY ./prisma ./prisma
 RUN bun install --production
-RUN bun x prisma generate && bun x prisma migrate deploy
-
-FROM base AS release
-COPY --from=install /usr/src/app/ .
+RUN bun x prisma generate
 
 ENV NODE_ENV production
 USER bun
