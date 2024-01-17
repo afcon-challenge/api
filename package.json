@@ -8,8 +8,10 @@
     "db:migrate": "prisma migrate deploy && prisma generate"
   },
   "dependencies": {
+    "@elysiajs/cors": "^0.8.0",
     "@prisma/client": "^5.8.1",
-    "elysia": "latest"
+    "elysia": "latest",
+    "elysia-helmet": "^1.0.1"
   },
   "devDependencies": {
     "bun-types": "latest",

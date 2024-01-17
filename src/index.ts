@@ -1,8 +1,12 @@
 import { Elysia, t } from "elysia";
 import { CreateSubmission, FindSubmissionById } from "./submission.service";
 import { GetJudge0Languages } from "./judge0.service";
+import cors from "@elysiajs/cors";
+import { helmet } from "elysia-helmet";
 
 const app = new Elysia()
+  .use(cors())
+  .use(helmet())
   .post(
     "/submissions",
     async ({ body, set }) => {
