@@ -69,9 +69,9 @@ export const GetVerdictOfSubmissions = (
   if (allWithSameStatus)
     return JUDGE0_STATUS[firstStatus].toUpperCase().split(" ").join("_");
 
-  const firstNonPending = submissions.find(({ status_id }) => status_id > 2);
-  return firstNonPending
-    ? JUDGE0_STATUS[firstNonPending.status_id]
+  const firstNonAccepted = submissions.find(({ status_id }) => status_id > 3);
+  return firstNonAccepted
+    ? JUDGE0_STATUS[firstNonAccepted.status_id]
         .toUpperCase()
         .split(" ")
         .join("_")
