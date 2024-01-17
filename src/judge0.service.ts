@@ -53,15 +53,15 @@ export const GetVerdictOfSubmissions = (
   submissions: TJudge0SubmissionResponse[]
 ): string => {
   // if all are accepted, return accepted
-  // if all are pending, return pending
+  // if any pending, return pending
   // else return wrong answer
 
   const firstStatus = submissions[0].status_id;
 
-  const allPending = submissions.every(
+  const anyPending = submissions.some(
     (submission) => submission.status_id < 3 // in queue, or processing
   );
-  if (allPending) return "PENDING";
+  if (anyPending) return "PENDING";
 
   const allWithSameStatus = submissions.every(
     (submission) => submission.status_id === firstStatus
