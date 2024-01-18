@@ -22,7 +22,7 @@ const app = new Elysia()
       body: t.Object({
         name: t.String(),
         sourceCode: t.String(),
-        languageId: t.Numeric(),
+        languageId: t.Number(),
       }),
     }
   )
