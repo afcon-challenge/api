@@ -11,7 +11,7 @@ This is the backend API for the AFCON Challenge project. It is built using [Bun]
 Clone the repo:
 
 ```sh
-git clone https://github.com/afcon-challenge/api
+git clone https://github.com/afcon-challenge/backend
 ```
 
 ### Production
