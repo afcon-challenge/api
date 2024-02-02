@@ -1,5 +1,11 @@
 # AFCON Challenge (API)
 
+This is the backend API for the AFCON Challenge project. It is built using [Bun](https://bun.sh), [Elysia](https://elysiajs.com/), [Prisma](https://prisma.io/), and [PostgreSQL](https://postgresql.org/).
+
+## Prerequisites
+
+- [Bun](https://bun.sh) - Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one.
+
 ## Getting up and running
 
 ```sh
