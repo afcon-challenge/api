@@ -1,4 +1,5 @@
 # AFCON Challenge (API)
+[![Better Stack Badge](https://uptime.betterstack.com/status-badges/v3/monitor/10vva.svg)](https://uptime.betterstack.com/?utm_source=status_badge)
 
 This is the backend API for the AFCON Challenge project. It is built using [Bun](https://bun.sh), [Elysia](https://elysiajs.com/), [Prisma](https://prisma.io/), and [PostgreSQL](https://postgresql.org/).
 
