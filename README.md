@@ -10,11 +10,17 @@ This is the backend API for the AFCON Challenge project. It is built using [Bun]
 
 ### Production
 
-All you need is Docker and Docker Compose installed on your machine. Then you can run the following commands:
+You need to have [Docker](https://docs.docker.com/engine/install/) installed.
+
+> [!NOTE]
+> You'll need to change the _domain_ in the Caddyfile to your domain name.
+
+Then you can run the following commands:
 
 ```sh
 cp .env.example .env # To create a .env file
 docker compose up -d # To get everything up and running
+docker compose exec api bunx prisma migrate deploy # Run the database migration
 ```
 
 ### Development
