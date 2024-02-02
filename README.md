@@ -8,6 +8,12 @@ This is the backend API for the AFCON Challenge project. It is built using [Bun]
 
 ## Getting up and running
 
+Clone the repo:
+
+```sh
+git clone https://github.com/afcon-challenge/api
+```
+
 ### Production
 
 You need to have [Docker](https://docs.docker.com/engine/install/) installed.
