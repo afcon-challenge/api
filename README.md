@@ -3,10 +3,6 @@
 
 This is the backend API for the AFCON Challenge project. It is built using [Bun](https://bun.sh), [Elysia](https://elysiajs.com/), [Prisma](https://prisma.io/), and [PostgreSQL](https://postgresql.org/).
 
-## Prerequisites
-
-- [Bun](https://bun.sh) - Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one.
-
 ## Getting up and running
 
 Clone the repo:
@@ -31,6 +27,8 @@ docker compose exec api bunx prisma migrate deploy # Run the database migration
 ```
 
 ### Development
+
+You need to have [Bun](https://bun.sh) installed.
 
 ```sh
 cp .env.example .env # To create a .env file
