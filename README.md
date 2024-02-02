@@ -8,6 +8,17 @@ This is the backend API for the AFCON Challenge project. It is built using [Bun]
 
 ## Getting up and running
 
+### Production
+
+All you need is Docker and Docker Compose installed on your machine. Then you can run the following commands:
+
+```sh
+cp .env.example .env # To create a .env file
+docker compose up -d # To get everything up and running
+```
+
+### Development
+
 ```sh
 cp .env.example .env # To create a .env file
 
