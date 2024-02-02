@@ -42,6 +42,10 @@ const app = new Elysia()
     set.headers["Cache-Control"] = "public, max-age=3600";
     return await GetJudge0Languages();
   })
+  .get("/hc", async ({ set }) => {
+    set.headers["Cache-Control"] = "public, max-age=60";
+    return { status: "ok" };
+  })
   .onError(({ error, set }) => {
     set.status = 500;
     console.error(error);
