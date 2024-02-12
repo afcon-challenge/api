@@ -26,6 +26,8 @@ docker compose up -d # To get everything up and running
 docker compose exec api bunx prisma migrate deploy # Run the database migration
 ```
 
+Also, check [useful commands in production](#useful-commands-in-production).
+
 ### Development
 
 You need to have [Bun](https://bun.sh) installed.
@@ -38,4 +40,35 @@ bun i # To install dependencies
 bun start # To start the server
 
 bun dev # To start the development server
+```
+
+## Useful commands in production
+
+Check logs in real-time: 
+
+```sh
+docker compose logs -f
+```
+
+Check logs of some service, _api_ for example:
+
+```sh
+docker compose logs api -f 
+```
+
+Rebuild:
+
+```sh
+docker compose up --build -d 
+```
+
+Connect to the database using psql (`mydb` is the database used by the api):
+```sh
+docker compose exec db psql -U judge0 -d mydb
+```
+
+Execute some SQL statement without connection: 
+
+```sh
+docker compose exec db psql -U judge0 -d mydb -c 'SELECT username, verdict, "createdAt" FROM "Submission" ORDER BY "createdAt" DESC;'
 ```
